@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "hGgJyu7drsM3xSY3N3n/PbRcC0/+ll+OLdiuOeMP2QJgQdCnGb0fgey5/2HprQo7yp4ZOMMSKjK1AiMZGsszyg==",
+  "success": true,
+  "projectFilePath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Domain\\EP_SimuladorMicroservice.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.3\\microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.composition\\1.4.0\\system.composition.1.4.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.composition.attributedmodel\\1.4.0\\system.composition.attributedmodel.1.4.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.composition.convention\\1.4.0\\system.composition.convention.1.4.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.composition.hosting\\1.4.0\\system.composition.hosting.1.4.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.composition.runtime\\1.4.0\\system.composition.runtime.1.4.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.composition.typedparts\\1.4.0\\system.composition.typedparts.1.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

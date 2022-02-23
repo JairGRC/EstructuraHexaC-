@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Composition" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EP_SimuladorMicroservice.Entities\EP_SimuladorMicroservice.Entities.csproj" />
+    <ProjectReference Include="..\EP_SimuladorMicroservice.Exceptions\EP_SimuladorMicroservice.Exceptions.csproj" />
+    <ProjectReference Include="..\EP_SimuladorMicroservice.Repository\EP_SimuladorMicroservice.Repository.csproj" />
+    <ProjectReference Include="..\Util\Util.csproj" />
+  </ItemGroup>
+
+</Project>

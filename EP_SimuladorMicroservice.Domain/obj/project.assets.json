@@ -1,0 +1,425 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.Extensions.Configuration/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "System.Composition/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "1.4.0",
+          "System.Composition.Convention": "1.4.0",
+          "System.Composition.Hosting": "1.4.0",
+          "System.Composition.Runtime": "1.4.0",
+          "System.Composition.TypedParts": "1.4.0"
+        }
+      },
+      "System.Composition.AttributedModel/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Composition.AttributedModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Composition.AttributedModel.dll": {}
+        }
+      },
+      "System.Composition.Convention/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "1.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Composition.Convention.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Composition.Convention.dll": {}
+        }
+      },
+      "System.Composition.Hosting/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.Runtime": "1.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Composition.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Composition.Hosting.dll": {}
+        }
+      },
+      "System.Composition.Runtime/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Composition.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Composition.Runtime.dll": {}
+        }
+      },
+      "System.Composition.TypedParts/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "1.4.0",
+          "System.Composition.Hosting": "1.4.0",
+          "System.Composition.Runtime": "1.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Composition.TypedParts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Composition.TypedParts.dll": {}
+        }
+      },
+      "EP_SimuladorMicroservice.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/EP_SimuladorMicroservice.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EP_SimuladorMicroservice.Entities.dll": {}
+        }
+      },
+      "EP_SimuladorMicroservice.Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/EP_SimuladorMicroservice.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EP_SimuladorMicroservice.Exceptions.dll": {}
+        }
+      },
+      "EP_SimuladorMicroservice.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EP_SimuladorMicroservice.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EP_SimuladorMicroservice.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EP_SimuladorMicroservice.Repository.dll": {}
+        }
+      },
+      "Util/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.3",
+          "System.Composition": "1.4.0"
+        },
+        "compile": {
+          "bin/placeholder/Util.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Util.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.Configuration/3.1.3": {
+      "sha512": "nTr4JgTSJScDBD3lahIh1jUBH8A43oG1cqID1qLoHSZhtegslpIyTYxmnehtUKi6xdY5j9R0oWeeGEP+JTcmAg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.3.1.3.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/3.1.3": {
+      "sha512": "d3vpIJdw+hRtkW1WoNTXhCczakVVId30Tj58li5GbJxz6MVGi8gy4+7JdLBb/wuHFd4+25cZe+Z0WPi207rBbQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/3.1.3": {
+      "sha512": "5gK6qeq9CBCHBfB3Tim3jCJTLafT9FXFBAZZq39rC8adz8mxcjVAuQSw3jGgHqoRk0jwtXKFhXJUVur8vfeuFg==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
+      ]
+    },
+    "System.Composition/1.4.0": {
+      "sha512": "aU1FPtKDcPHCwKi+XZf3lizUCUDWa3CawtE/KtqTG7kmpDdX8YsRYQ/gd1mIXxqcJtcnM5zsiLUPv5YXRFYUTw==",
+      "type": "package",
+      "path": "system.composition/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "system.composition.1.4.0.nupkg.sha512",
+        "system.composition.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Composition.AttributedModel/1.4.0": {
+      "sha512": "nJpwGXzcKLPKHx1mvXbwtxU6o2tpzR529/pBe5NerXq75R5XcZHu6yMRUHcuroRor3+YlJi6l/l0klQfTYRzlQ==",
+      "type": "package",
+      "path": "system.composition.attributedmodel/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Composition.AttributedModel.dll",
+        "lib/netstandard2.0/System.Composition.AttributedModel.dll",
+        "lib/netstandard2.0/System.Composition.AttributedModel.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll",
+        "system.composition.attributedmodel.1.4.0.nupkg.sha512",
+        "system.composition.attributedmodel.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Composition.Convention/1.4.0": {
+      "sha512": "jEi0SwIWi4SilLi0i83U5kMM8A2aUIe8t8VmXvcoVHPKo0h0UeizLyIcQ6AgeJNVTmZ7uoRp5trWJDjtBeXsNA==",
+      "type": "package",
+      "path": "system.composition.convention/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Composition.Convention.dll",
+        "lib/netstandard2.0/System.Composition.Convention.dll",
+        "lib/netstandard2.0/System.Composition.Convention.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll",
+        "system.composition.convention.1.4.0.nupkg.sha512",
+        "system.composition.convention.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Composition.Hosting/1.4.0": {
+      "sha512": "Ek5lYb00NCMzBecuV/zI4734PrrdoruiMbbR7S3joTOCSrLGND2Xt3aCp8Jg1ZvgA0SFH1Aov2/ZobLazwdd6g==",
+      "type": "package",
+      "path": "system.composition.hosting/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Composition.Hosting.dll",
+        "lib/netstandard2.0/System.Composition.Hosting.dll",
+        "lib/netstandard2.0/System.Composition.Hosting.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll",
+        "system.composition.hosting.1.4.0.nupkg.sha512",
+        "system.composition.hosting.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Composition.Runtime/1.4.0": {
+      "sha512": "2+RKi0a4qg7cO0w/6YS1B17MWhfSpDDUZ94ibQWhb9XM/L6MD9tcS1VgejpyPobVxsrlvh7rVtfkPPOetaKhRA==",
+      "type": "package",
+      "path": "system.composition.runtime/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Composition.Runtime.dll",
+        "lib/netstandard2.0/System.Composition.Runtime.dll",
+        "lib/netstandard2.0/System.Composition.Runtime.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll",
+        "system.composition.runtime.1.4.0.nupkg.sha512",
+        "system.composition.runtime.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Composition.TypedParts/1.4.0": {
+      "sha512": "azJdjOUf50JMUH+iactt0629uJg/ahoerGDnFDeBeQ1BrV6+4cpA5tiQIIZMSTpkj3fHlmdlJQBoRsJIqtNguw==",
+      "type": "package",
+      "path": "system.composition.typedparts/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Composition.TypedParts.dll",
+        "lib/netstandard2.0/System.Composition.TypedParts.dll",
+        "lib/netstandard2.0/System.Composition.TypedParts.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll",
+        "system.composition.typedparts.1.4.0.nupkg.sha512",
+        "system.composition.typedparts.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "EP_SimuladorMicroservice.Entities/1.0.0": {
+      "type": "project",
+      "path": "../EP_SimuladorMicroservice.Entities/EP_SimuladorMicroservice.Entities.csproj",
+      "msbuildProject": "../EP_SimuladorMicroservice.Entities/EP_SimuladorMicroservice.Entities.csproj"
+    },
+    "EP_SimuladorMicroservice.Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../EP_SimuladorMicroservice.Exceptions/EP_SimuladorMicroservice.Exceptions.csproj",
+      "msbuildProject": "../EP_SimuladorMicroservice.Exceptions/EP_SimuladorMicroservice.Exceptions.csproj"
+    },
+    "EP_SimuladorMicroservice.Repository/1.0.0": {
+      "type": "project",
+      "path": "../EP_SimuladorMicroservice.Repository/EP_SimuladorMicroservice.Repository.csproj",
+      "msbuildProject": "../EP_SimuladorMicroservice.Repository/EP_SimuladorMicroservice.Repository.csproj"
+    },
+    "Util/1.0.0": {
+      "type": "project",
+      "path": "../Util/Util.csproj",
+      "msbuildProject": "../Util/Util.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "EP_SimuladorMicroservice.Entities >= 1.0.0",
+      "EP_SimuladorMicroservice.Exceptions >= 1.0.0",
+      "EP_SimuladorMicroservice.Repository >= 1.0.0",
+      "System.Composition >= 1.4.0",
+      "Util >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Domain\\EP_SimuladorMicroservice.Domain.csproj",
+      "projectName": "EP_SimuladorMicroservice.Domain",
+      "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Domain\\EP_SimuladorMicroservice.Domain.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
+              "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj"
+            },
+            "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj": {
+              "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj"
+            },
+            "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj": {
+              "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj"
+            },
+            "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\Util.csproj": {
+              "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\Util.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "System.Composition": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

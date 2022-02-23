@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\EP_SimuladorMicroservice.Domain\EP_SimuladorMicroservice.Domain.csproj" />
+    <ProjectReference Include="..\EP_SimuladorMicroservice.Entities\EP_SimuladorMicroservice.Entities.csproj" />
+    <ProjectReference Include="..\EP_SimuladorMicroservice.Exceptions\EP_SimuladorMicroservice.Exceptions.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
