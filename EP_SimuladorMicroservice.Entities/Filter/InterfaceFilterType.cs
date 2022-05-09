@@ -7,17 +7,16 @@ namespace EP_SimuladorMicroservice.Entities
 
 {
 
- public enum InterfaceFilterItemType : byte{
-	 Undefined, 
-	 ById 
-
-}
+ public enum InterfaceFilterItemType : byte
+	{
+		 Undefined, 
+		 ById 
+	}
 
  public enum InterfaceFilterLstItemType : byte
-{
-	 Undefined ,
-	 ByPagination 
-
-}
+	{
+		 Undefined ,
+		 ByPagination 
+	}
 }
 

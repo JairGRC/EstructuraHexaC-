@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dqkvc35SUur341nkhRJFs+R7b2d2iMOY41D8hwGUVG9aMHsKUQWUzkMJFPPoe/etzpxdLAXPQgMqPVzTX944EQ==",
+  "dgSpecHash": "B4kggoV6AJe606ND5Z1oryQQ8sPcDDq3lnKYlKy46bsMOvWUv9loaBMcB7flJirAXcAeMiOcW0D5CsJ4mNovNA==",
   "success": true,
-  "projectFilePath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
+  "projectFilePath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

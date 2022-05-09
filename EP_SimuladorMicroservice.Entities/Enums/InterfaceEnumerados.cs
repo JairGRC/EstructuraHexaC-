@@ -5,8 +5,9 @@ using System.Text;
 namespace EP_SimuladorMicroservice.Entities 
 
 {
-	 public enum StatusInterface{
-	 Undefined 
-}
+	 public enum StatusInterface
+	{
+		Undefined 
+	}
 }
 

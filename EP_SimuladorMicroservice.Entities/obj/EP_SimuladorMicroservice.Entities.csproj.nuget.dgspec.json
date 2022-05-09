@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {}
+    "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {}
   },
   "projects": {
-    "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
+    "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
+        "projectUniqueName": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
         "projectName": "EP_SimuladorMicroservice.Entities",
-        "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\obj\\",
+        "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
+        "packagesPath": "C:\\Users\\JAIR\\.nuget\\packages\\",
+        "outputPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\JAIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -59,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj": {}
+    "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj": {}
   },
   "projects": {
-    "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
+    "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
+        "projectUniqueName": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
         "projectName": "EP_SimuladorMicroservice.Entities",
-        "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\obj\\",
+        "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj",
+        "packagesPath": "C:\\Users\\JAIR\\.nuget\\packages\\",
+        "outputPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\JAIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -59,27 +54,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj": {
+    "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj",
+        "projectUniqueName": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj",
         "projectName": "EP_SimuladorMicroservice.Infraestructure",
-        "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Infraestructure\\obj\\",
+        "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Infraestructure\\EP_SimuladorMicroservice.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\JAIR\\.nuget\\packages\\",
+        "outputPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\JAIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -92,14 +82,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
-                "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj"
+              "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
+                "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj"
               },
-              "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj": {
-                "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj"
+              "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj": {
+                "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj"
               },
-              "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\Util.csproj": {
-                "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\Util.csproj"
+              "C:\\EPArtners\\EP.Simulador\\Util\\Util.csproj": {
+                "projectPath": "C:\\EPArtners\\EP.Simulador\\Util\\Util.csproj"
               }
             }
           }
@@ -142,27 +132,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj": {
+    "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj",
+        "projectUniqueName": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj",
         "projectName": "EP_SimuladorMicroservice.Repository",
-        "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Repository\\obj\\",
+        "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Repository\\EP_SimuladorMicroservice.Repository.csproj",
+        "packagesPath": "C:\\Users\\JAIR\\.nuget\\packages\\",
+        "outputPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\JAIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -175,8 +160,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
-                "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj"
+              "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj": {
+                "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Entities\\EP_SimuladorMicroservice.Entities.csproj"
               }
             }
           }
@@ -205,27 +190,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\Util.csproj": {
+    "C:\\EPArtners\\EP.Simulador\\Util\\Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\Util.csproj",
+        "projectUniqueName": "C:\\EPArtners\\EP.Simulador\\Util\\Util.csproj",
         "projectName": "Util",
-        "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\Util.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\Util\\obj\\",
+        "projectPath": "C:\\EPArtners\\EP.Simulador\\Util\\Util.csproj",
+        "packagesPath": "C:\\Users\\JAIR\\.nuget\\packages\\",
+        "outputPath": "C:\\EPArtners\\EP.Simulador\\Util\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\JAIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -274,7 +254,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

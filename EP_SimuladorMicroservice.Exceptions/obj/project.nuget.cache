@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SSJMSlDhl/itTQVNxXVisrC+INcalP1eDWRjQxe669fMxNmDKCRmXDZ+4neVEYsKkLOe0o0Pz54qqVum6Q/jhw==",
+  "dgSpecHash": "6ycHM6Gv1N3Sq0DUag2jXDFGOwc4vJl1u5euNWD6UlFjHW5Mh3PVgbza5xcSpbwvK1kuVb1VOZHouEo0HO+e+Q==",
   "success": true,
-  "projectFilePath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj",
+  "projectFilePath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

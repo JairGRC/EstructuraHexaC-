@@ -8,27 +8,20 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\JAIR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj",
+      "projectUniqueName": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj",
       "projectName": "EP_SimuladorMicroservice.Exceptions",
-      "projectPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Aplication\\EP.Simulador\\1.0 Back-End\\EP_SimuladorMicroservice.Exceptions\\obj\\",
+      "projectPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Exceptions\\EP_SimuladorMicroservice.Exceptions.csproj",
+      "packagesPath": "C:\\Users\\JAIR\\.nuget\\packages\\",
+      "outputPath": "C:\\EPArtners\\EP.Simulador\\EP_SimuladorMicroservice.Exceptions\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\JAIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -67,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

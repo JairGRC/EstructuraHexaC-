@@ -1,0 +1,12 @@
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\bin\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.deps.json
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\bin\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\bin\Debug\net5.0\ref\EP_SimuladorMicroservice.Exceptions.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\bin\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.pdb
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.csproj.AssemblyReference.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.AssemblyInfoInputs.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.AssemblyInfo.cs
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.csproj.CoreCompileInputs.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\ref\EP_SimuladorMicroservice.Exceptions.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Exceptions\obj\Debug\net5.0\EP_SimuladorMicroservice.Exceptions.pdb

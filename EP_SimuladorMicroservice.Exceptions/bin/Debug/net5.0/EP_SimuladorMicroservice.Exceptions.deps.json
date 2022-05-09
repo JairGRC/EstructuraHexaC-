@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "EP_SimuladorMicroservice.Exceptions/1.0.0": {
+        "runtime": {
+          "EP_SimuladorMicroservice.Exceptions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EP_SimuladorMicroservice.Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

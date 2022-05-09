@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "EP_SimuladorMicroservice.Repository/1.0.0": {
+        "dependencies": {
+          "EP_SimuladorMicroservice.Entities": "1.0.0"
+        },
+        "runtime": {
+          "EP_SimuladorMicroservice.Repository.dll": {}
+        }
+      },
+      "EP_SimuladorMicroservice.Entities/1.0.0": {
+        "runtime": {
+          "EP_SimuladorMicroservice.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EP_SimuladorMicroservice.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EP_SimuladorMicroservice.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\bin\Debug\net5.0\EP_SimuladorMicroservice.Repository.deps.json
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\bin\Debug\net5.0\EP_SimuladorMicroservice.Repository.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\bin\Debug\net5.0\ref\EP_SimuladorMicroservice.Repository.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\bin\Debug\net5.0\EP_SimuladorMicroservice.Repository.pdb
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\bin\Debug\net5.0\EP_SimuladorMicroservice.Entities.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\bin\Debug\net5.0\EP_SimuladorMicroservice.Entities.pdb
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.csproj.AssemblyReference.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.AssemblyInfoInputs.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.AssemblyInfo.cs
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.csproj.CoreCompileInputs.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.csproj.CopyComplete
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\ref\EP_SimuladorMicroservice.Repository.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Repository\obj\Debug\net5.0\EP_SimuladorMicroservice.Repository.pdb

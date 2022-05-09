@@ -1,0 +1,12 @@
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\bin\Debug\net5.0\EP_SimuladorMicroservice.Entities.deps.json
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\bin\Debug\net5.0\EP_SimuladorMicroservice.Entities.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\bin\Debug\net5.0\ref\EP_SimuladorMicroservice.Entities.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\bin\Debug\net5.0\EP_SimuladorMicroservice.Entities.pdb
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\EP_SimuladorMicroservice.Entities.csproj.AssemblyReference.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\EP_SimuladorMicroservice.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\EP_SimuladorMicroservice.Entities.AssemblyInfoInputs.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\EP_SimuladorMicroservice.Entities.AssemblyInfo.cs
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\EP_SimuladorMicroservice.Entities.csproj.CoreCompileInputs.cache
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\EP_SimuladorMicroservice.Entities.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\ref\EP_SimuladorMicroservice.Entities.dll
+C:\EPArtners\EP.Simulador\EP_SimuladorMicroservice.Entities\obj\Debug\net5.0\EP_SimuladorMicroservice.Entities.pdb
