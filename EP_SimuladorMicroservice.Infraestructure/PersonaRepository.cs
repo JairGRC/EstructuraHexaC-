@@ -28,7 +28,7 @@ namespace EP_SimuladorMicroservice.Infraestructure
             long id = 0;
             var query = "USP_Persona_Create";
             var param = new DynamicParameters();
-            param.Add("@MP_cPerCodigo", item.cPerCodigo, System.Data.DbType.String);
+            //param.Add("@MP_cPerCodigo", item.cPerCodigo, System.Data.DbType.String);
             param.Add("@MP_CPerApellido", item.cPerApellido, System.Data.DbType.String);
             param.Add("@MP_CPerApellPat", item.cPerApellPat, System.Data.DbType.String);
             param.Add("@MP_cPerNombre", item.cPerNombre, System.Data.DbType.String);

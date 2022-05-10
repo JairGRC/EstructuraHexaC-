@@ -80,16 +80,16 @@ namespace EP_SimuladorMicroservice.Domain
             exito = _PertelefonoRepository.Delete(nConstcodigo);
             return exito;
         }
-        public PertelefonoEntity GetBycPerCodigo(string nConstCodigo)
-        {
-            PertelefonoEntity Pertelefono = null;
-            Pertelefono = _PertelefonoRepository.GetItem(
-                new PertelefonoFilter()
-                {
-                    nConstCodigo = nConstCodigo
-                }, PertelefonoFilterItemType.BycPerCodigo);
-            return Pertelefono;
-        }
+        //public PertelefonoEntity GetBycPerCodigo(string nConstCodigo)
+        //{
+        //    PertelefonoEntity Pertelefono = null;
+        //    Pertelefono = _PertelefonoRepository.GetItem(
+        //        new PertelefonoFilter()
+        //        {
+        //            nConstCodigo = nConstCodigo
+        //        }, PertelefonoFilterItemType.BycPerCodigo);
+        //    return Pertelefono;
+        //}
         public IEnumerable<PertelefonoEntity> GetByList(PertelefonoFilter filter,
             PertelefonoFilterListType filterType, Pagination pagination)
         {

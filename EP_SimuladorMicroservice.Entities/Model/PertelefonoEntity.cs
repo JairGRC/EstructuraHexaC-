@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace EP_SimuladorMicroservice.Entities.Model
 {
     [DataContract]
-    public class PertelefonoEntity: BaseEntity
+    public class PertelefonoEntity
     {
         [DataMember(EmitDefaultValue = false, Name = "cPerCodigo")]
         public string cPerCodigo { get; set; }

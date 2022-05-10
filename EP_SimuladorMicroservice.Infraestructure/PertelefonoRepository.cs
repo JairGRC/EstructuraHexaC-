@@ -67,24 +67,24 @@ namespace EP_SimuladorMicroservice.Infraestructure
         }
 
 
-        public PertelefonoEntity GetItem(PertelefonoFilter filter, PertelefonoFilterItemType filterType)
-        {
-            PertelefonoEntity itemfound = null;
-            switch (filterType)
-            {
-                case PertelefonoFilterItemType.Undefined:
-                    break;
-                case PertelefonoFilterItemType.BycPerCodigo:
-                    itemfound = this.BycPerCodigo(filter.nConstCodigo);
-                    break;
-                //case PertelefonoFilterItemType.ByList:
-                //    //itemfound = this.BycPerList();
-                //    break;
-                default:
-                    break;
-            }
-            return itemfound;
-        }
+        //public PertelefonoEntity GetItem(PertelefonoFilter filter, PertelefonoFilterItemType filterType)
+        //{
+        //    PertelefonoEntity itemfound = null;
+        //    switch (filterType)
+        //    {
+        //        case PertelefonoFilterItemType.Undefined:
+        //            break;
+        //        case PertelefonoFilterItemType.BycPerCodigo:
+        //            itemfound = this.BycPerCodigo(filter.nConstCodigo);
+        //            break;
+        //        //case PertelefonoFilterItemType.ByList:
+        //        //    //itemfound = this.BycPerList();
+        //        //    break;
+        //        default:
+        //            break;
+        //    }
+        //    return itemfound;
+        //}
 
         public IEnumerable<PertelefonoEntity> GetLstItem(PertelefonoFilter filter, PertelefonoFilterListType filterType, Pagination pagination)
         {
@@ -94,6 +94,9 @@ namespace EP_SimuladorMicroservice.Infraestructure
             {
                 case PertelefonoFilterListType.ByList:
                     lstItemFound = this.getByList();
+                    break;
+                case PertelefonoFilterListType.BycPerCodigo:
+                    lstItemFound = this.BycPerCodigo(filter.nConstCodigo);
                     break;
                 default:
                     break;
@@ -112,16 +115,21 @@ namespace EP_SimuladorMicroservice.Infraestructure
                 commandType: System.Data.CommandType.StoredProcedure);
             return lstfound;
         }
-        private PertelefonoEntity BycPerCodigo(string nConstCodigo)
+        private IEnumerable<PertelefonoEntity> BycPerCodigo(string nConstCodigo)
         {
-            PertelefonoEntity itemfound = null;
+            IEnumerable<PertelefonoEntity> lstfound = new List<PertelefonoEntity>();
             var query = "USP_Pertelefono_Get";
             var param = new DynamicParameters();
             param.Add("@MP_cPerCodigo", nConstCodigo);
-            itemfound = SqlMapper.QueryFirstOrDefault<PertelefonoEntity>
+            lstfound = SqlMapper.Query<PertelefonoEntity>
                 (this._connectionFactory.GetConnection, query, param,
                 commandType: System.Data.CommandType.StoredProcedure);
-            return itemfound;
+            return lstfound;
+        }
+
+        public PertelefonoEntity GetItem(PertelefonoFilter filter, PertelefonoFilterItemType filterType)
+        {
+            throw new NotImplementedException();
         }
         //private IEnumerable PertelefonoEntity BycPerList()
         //{

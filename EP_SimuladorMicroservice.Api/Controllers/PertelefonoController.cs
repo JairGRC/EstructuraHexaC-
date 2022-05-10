@@ -49,21 +49,21 @@ namespace EP_SimuladorMicroservice.Api.Controllers
         [ProducesResponseType(404)]
         public IActionResult GetBycPerCodigo(string cPercodigo)
         {
-            PertelefonoItemResponse response = null;
-            PertelefonoItemRequest request = new PertelefonoItemRequest()
+            PertelefonoLstItemResponse response = null;
+            PertelefonoLstItemRequest request = new PertelefonoLstItemRequest()
             {
                 Filter = new PertelefonoFilter()
                 {
                     nConstCodigo = cPercodigo
                 },
-                FilterType = PertelefonoFilterItemType.BycPerCodigo
+                FilterType = (PertelefonoFilterItemType)PertelefonoFilterListType.BycPerCodigo
             };
             try
             {
-                response = new PertelefonoService().GetPertelefono(request);
+                response = new PertelefonoService().GetLstPertelefono(request);
                 if (!response.IsSuccess)
                     return BadRequest(response);
-                if (response.Item == null)
+                if (response.LstItem == null)
                     return NotFound(response);
             }
             catch (Exception)

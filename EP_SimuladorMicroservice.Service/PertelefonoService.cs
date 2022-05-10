@@ -52,41 +52,41 @@ namespace EP_SimuladorMicroservice.Service
             }
             return response;
         }
-        public PertelefonoItemResponse GetPertelefono(PertelefonoItemRequest request)
-        {
-            PertelefonoItemResponse response = new PertelefonoItemResponse();
-            response.InitializeResponse(request);
-            try
-            {
-                if (response.LstError.Count == 0)
-                {
-                    switch (request.FilterType)
-                    {
-                        case PertelefonoFilterItemType.Undefined:
-                            break;
-                        case PertelefonoFilterItemType.BycPerCodigo:
-                            response.Item = new PertelefonoDomain().GetBycPerCodigo(request.Filter.nConstCodigo);
-                            break;
-                        //case PertelefonoFilterItemType.ByList:
-                        //    response.Item = new PertelefonoDomain().GetByList();
-                        //    break;
-                        default:
-                            break;
-                    }
-                    response.IsSuccess = true;
-                }
-            }
-            catch (CustomException ex)
-            {
-                response.LstError.Add(ex.CustomMessage);
-            }
-            catch (Exception ex)
-            {
-                response.LstError.Add("Server Error");
-            }
-            return response;
+        //public PertelefonoItemResponse GetPertelefono(PertelefonoItemRequest request)
+        //{
+        //    PertelefonoItemResponse response = new PertelefonoItemResponse();
+        //    response.InitializeResponse(request);
+        //    try
+        //    {
+        //        if (response.LstError.Count == 0)
+        //        {
+        //            switch (request.FilterType)
+        //            {
+        //                case PertelefonoFilterItemType.Undefined:
+        //                    break;
+        //                case PertelefonoFilterItemType.BycPerCodigo:
+        //                    response.Item = new PertelefonoDomain().GetBycPerCodigo(request.Filter.nConstCodigo);
+        //                    break;
+        //                //case PertelefonoFilterItemType.ByList:
+        //                //    response.Item = new PertelefonoDomain().GetByList();
+        //                //    break;
+        //                default:
+        //                    break;
+        //            }
+        //            response.IsSuccess = true;
+        //        }
+        //    }
+        //    catch (CustomException ex)
+        //    {
+        //        response.LstError.Add(ex.CustomMessage);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        response.LstError.Add("Server Error");
+        //    }
+        //    return response;
 
-        }
+        //}
         public PertelefonoLstItemResponse GetLstPertelefono(PertelefonoLstItemRequest request)
         {
             PertelefonoLstItemResponse response = new PertelefonoLstItemResponse();
@@ -100,6 +100,10 @@ namespace EP_SimuladorMicroservice.Service
                         case (PertelefonoFilterItemType)PertelefonoFilterListType.Undefined:
                             break;
                         case (PertelefonoFilterItemType)PertelefonoFilterListType.ByList:
+                            response.LstItem = new PertelefonoDomain().GetByList(request.Filter,
+                                (PertelefonoFilterListType)request.FilterType, request.Pagination);
+                            break;
+                        case (PertelefonoFilterItemType)PertelefonoFilterListType.BycPerCodigo:
                             response.LstItem = new PertelefonoDomain().GetByList(request.Filter,
                                 (PertelefonoFilterListType)request.FilterType, request.Pagination);
                             break;

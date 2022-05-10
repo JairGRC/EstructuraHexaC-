@@ -5,6 +5,7 @@ using EP_SimuladorMicroservice.Entities.Request;
 using EP_SimuladorMicroservice.Entities.Response;
 using EP_SimuladorMicroservice.Exceptions;
 using EP_SimuladorMicroservice.Repository;
+
 using System;
 using System.Collections.Generic;
 using System.Composition;
@@ -21,11 +22,13 @@ namespace EP_SimuladorMicroservice.Domain
         #region MEF
         [Import]
         private IPersonaRepository _PersonaRepository { get; set; }
+        private IPertelefonoRepository _PertelefonoRepository { get; set; }
         #endregion
         #region Constructor 
         public PersonaDomain ()
         {
             _PersonaRepository = MEFContainer.Container.GetExport<IPersonaRepository>();
+            _PertelefonoRepository = MEFContainer.Container.GetExport<IPertelefonoRepository>();
         }
         #endregion
         #region Method Publics 
@@ -79,30 +82,64 @@ namespace EP_SimuladorMicroservice.Domain
                 { 
                 nConstCodigo=nConstCodigo
                 },PersonaFilterItemType.BycPerCodigo);
+
+            if (persona != null)
+            {
+                List<PertelefonoEntity> pertelefonos = new List<PertelefonoEntity>();
+                PertelefonoLstItemResponse response = null;
+                PertelefonoLstItemRequest request = new PertelefonoLstItemRequest()
+                {
+                    Filter = new PertelefonoFilter()
+                    {
+                        nConstCodigo = persona.cPerCodigo
+                    },
+                    FilterType = (PertelefonoFilterItemType)PertelefonoFilterListType.BycPerCodigo
+                };
+
+
+                pertelefonos = _PertelefonoRepository.GetLstItem(request.Filter, (PertelefonoFilterListType)request.FilterType, null).ToList();
+
+
+                if (pertelefonos.Count > 0)
+                {
+                    persona.Pertelefono = new List<PertelefonoEntity>(pertelefonos);
+                }
+            }
+
             return persona;
         }
         public IEnumerable<PersonaEntity> GetByList(PersonaFilter filter,
             PersonaFilterListType filterType,Pagination pagination)
         {
-            //PernameLstItemResponse response = new PernameLstItemResponse();
-            //PernameFilterListType filterlist=new PernameFilterListType();
-            //new PernameDomain().GetByList(filter.nConstCodigo)
-            List<PersonaEntity> lst = null;
-            List<PernameEntity> pernames = null;
-            PernameLstItemRequest request = new PernameLstItemRequest()
-            {
-                Filter = new PernameFilter() { },
-                FilterType = (PernameFilterItemType)PernameFilterListType.ByListID
-            };
-
-
+            List<PersonaEntity> lst = new List<PersonaEntity>();
             lst = _PersonaRepository.GetLstItem(filter, filterType, pagination).ToList();
-            pernames = (List<PernameEntity>)new PernameDomain().GetByList(request.Filter,
-                                (PernameFilterListType)request.FilterType, request.Pagination);
-            foreach (PersonaEntity item in lst)
-            {
 
+            if(lst.Count>0)
+            {
+                foreach (var lstPersona in lst)
+                {
+                    List<PertelefonoEntity> pertelefonos = new List<PertelefonoEntity>();
+                    PertelefonoLstItemResponse response = null;
+                    PertelefonoLstItemRequest request = new PertelefonoLstItemRequest()
+                    {
+                        Filter = new PertelefonoFilter()
+                        {
+                            nConstCodigo = lstPersona.cPerCodigo
+                        },
+                        FilterType = (PertelefonoFilterItemType)PertelefonoFilterListType.BycPerCodigo
+                    };
+
+
+                    pertelefonos = _PertelefonoRepository.GetLstItem(request.Filter, (PertelefonoFilterListType)request.FilterType, pagination).ToList();
+
+
+                    if (pertelefonos.Count > 0)
+                    {
+                        lstPersona.Pertelefono = new List<PertelefonoEntity>(pertelefonos);
+                    }
+                }
             }
+
             return lst;
         }
         #endregion

@@ -11,7 +11,8 @@ namespace EP_SimuladorMicroservice.Entities.Model
     {
         [DataMember(EmitDefaultValue =false,Name = "cPerCodigo")]
         public string cPerCodigo { get; set; }
-        public virtual List<PernameEntity> Pername { get; set; }
+        public  List<PernameEntity> Pername { get; set; }
+        public  List<PertelefonoEntity> Pertelefono { get; set; }
 
         [DataMember(EmitDefaultValue = false, Name = "cPerApellido")]
         public string cPerApellido { get; set; }
