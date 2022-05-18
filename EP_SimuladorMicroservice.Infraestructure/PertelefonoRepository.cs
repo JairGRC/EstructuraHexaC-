@@ -60,6 +60,7 @@ namespace EP_SimuladorMicroservice.Infraestructure
             param.Add("@MP_cPerCodigo", item.cPerCodigo, System.Data.DbType.String);
             param.Add("@MP_nPerTelTipo", item.nPerTelTipo, System.Data.DbType.Int32);
             param.Add("@MP_cPerTelNumero", item.cPerTelNumero, System.Data.DbType.String);
+            param.Add("@PerTelNuevoNumero", item.cPerTelNumeroNuevo, System.Data.DbType.String);
             param.Add("@MP_nPerTelStatus", item.nPerTelStatus, System.Data.DbType.Int32);
             param.Add("@MP_dPerTelFecRegistro", item.dPerTelFecRegistro, System.Data.DbType.DateTime);
             return (int)SqlMapper.Execute(this._connectionFactory.GetConnection,

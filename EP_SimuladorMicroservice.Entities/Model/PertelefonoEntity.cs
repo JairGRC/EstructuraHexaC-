@@ -16,6 +16,8 @@ namespace EP_SimuladorMicroservice.Entities.Model
         public Int32 nPerTelTipo { get; set; }
         [DataMember(EmitDefaultValue = false, Name = "cPerTelNumero")]
         public string cPerTelNumero { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "cPerTelNumeroNuevo")]
+        public string cPerTelNumeroNuevo { get; set; }
         [DataMember(EmitDefaultValue = false, Name = "nPerTelStatus")]
         public Int32 nPerTelStatus { get; set; }
         [DataMember(EmitDefaultValue = false, Name = "dPerTelFecRegistro")]

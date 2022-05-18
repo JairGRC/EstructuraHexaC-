@@ -95,7 +95,7 @@ namespace EP_SimuladorMicroservice.Infraestructure
 
         public IEnumerable<PernaturalEntity> GetLstItem(PernaturalFilter filter, PernaturalFilterListType filterType, Pagination pagination)
         {
-            int rowTotal = 0;
+            //int rowTotal = 0;
             IEnumerable<PernaturalEntity> lstItemFound = new List<PernaturalEntity>();
             switch (filterType)
             {

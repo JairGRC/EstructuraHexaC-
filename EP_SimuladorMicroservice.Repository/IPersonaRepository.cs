@@ -15,5 +15,6 @@ namespace EP_SimuladorMicroservice.Repository
         PersonaEntity GetItem(PersonaFilter filter, PersonaFilterItemType filterType);
         IEnumerable<PersonaEntity> GetLstItem(PersonaFilter filter, 
             PersonaFilterListType filterType, Pagination pagination);
+        bool Delete(string nConstcodigo);
     }
 }

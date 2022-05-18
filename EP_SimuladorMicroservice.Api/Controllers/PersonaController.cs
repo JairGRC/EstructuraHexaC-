@@ -24,13 +24,18 @@ namespace EP_SimuladorMicroservice.Api.Controllers
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
-        public IActionResult GetBycPerCodigo()
+        public IActionResult GetBycPerCodigo(Int32 PageIndex, Int32 TotalRows)
         {
             PersonaLstItemResponse response = null;
             PersonaLstItemRequest request = new PersonaLstItemRequest()
             {
-                Filter = new PersonaFilter(){ },
-                FilterType = (PersonaFilterItemType)PersonaFilterListType.ByList
+                Filter = new PersonaFilter() { },
+                FilterType = (PersonaFilterItemType)PersonaFilterListType.ByList,
+                Pagination = new Pagination()
+                {
+                    PageIndex = PageIndex,
+                    TotalRows = TotalRows
+                }
             };
             try
             {
@@ -59,8 +64,10 @@ namespace EP_SimuladorMicroservice.Api.Controllers
                 {
                     nConstCodigo = cPercodigo
                 },
-                FilterType=PersonaFilterItemType.BycPerCodigo
+                FilterType = PersonaFilterItemType.BycPerCodigo,
+                
             };
+          
             try
             {
                 response = new PersonaService().GetPersona(request);

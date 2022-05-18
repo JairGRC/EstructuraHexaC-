@@ -36,14 +36,14 @@ namespace EP_SimuladorMicroservice.Domain
             bool exito = false;
             using (TransactionScope tx = new TransactionScope())
             {
-                PersonaItemResponse response = new PersonaItemResponse();
-                response.Item = new PersonaDomain().GetBycPerCodigo(Pername.cPerCodigo);
-                if (response.Item == null)
-                {
-                    throw new FailAddPernamePersonaException();
-                }
-                else
-                {
+                //PersonaItemResponse response = new PersonaItemResponse();
+                //response.Item = new PersonaDomain().GetBycPerCodigo(Pername.cPerCodigo);
+                //if (response.Item == null)
+                //{
+                //    throw new FailAddPernamePersonaException();
+                //}
+                //else
+                //{
                     id = _PernameRepository.Insert(Pername);
                     if (id == 0)
                     {
@@ -54,7 +54,7 @@ namespace EP_SimuladorMicroservice.Domain
                         exito = true;
                     }
                     if (exito) tx.Complete();
-                }
+                //}
                 
             }
             return id > 0;
@@ -71,15 +71,10 @@ namespace EP_SimuladorMicroservice.Domain
             }
             return false;
         }
-        public bool DeletePername(string nConstcodigo)
+        public bool DeletePername(string nConstcodigo,DateTime dPerFecEfectiva)
         {
             bool exito = false;
-            PernameEntity PernameFound = _PernameRepository.GetItem(
-                new PernameFilter()
-                {
-                    nConstCodigo = nConstcodigo
-                }, PernameFilterItemType.BycPerCodigo);
-            exito = _PernameRepository.Delete(nConstcodigo);
+            exito = _PernameRepository.delete(nConstcodigo, dPerFecEfectiva);
             return exito;
         }
         public PernameEntity GetBycPerCodigo(string nConstCodigo)

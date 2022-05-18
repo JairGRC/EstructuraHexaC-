@@ -12,6 +12,7 @@ namespace EP_SimuladorMicroservice.Repository
     public interface IPernameRepository : IGenericRepository<PernameEntity>
     {
         long Insert(PernameEntity item);
+        bool delete(string cPerCodigo, DateTime dPerFecEfectiva);
         PernameEntity GetItem(PernameFilter filter, PernameFilterItemType filterType);
         IEnumerable<PernameEntity> GetLstItem(PernameFilter filter,
             PernameFilterListType filterType, Pagination pagination);

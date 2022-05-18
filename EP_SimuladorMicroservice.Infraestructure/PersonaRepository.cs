@@ -26,6 +26,7 @@ namespace EP_SimuladorMicroservice.Infraestructure
         public long Insert(PersonaEntity item)
         {
             long id = 0;
+            IEnumerable<PersonaEntity> lstfound = new List<PersonaEntity>();
             var query = "USP_Persona_Create";
             var param = new DynamicParameters();
             //param.Add("@MP_cPerCodigo", item.cPerCodigo, System.Data.DbType.String);
@@ -37,8 +38,9 @@ namespace EP_SimuladorMicroservice.Infraestructure
             param.Add("@MP_nPerEstado", item.nPerEstado, System.Data.DbType.Int32);
             param.Add("@MP_cUbiGeoCodigo", item.cUbiGeoCodigo, System.Data.DbType.String);
             param.Add("@MP_nUbiGeoCodigo", item.nUbiGeoCodigo, System.Data.DbType.Int32);
-            id = (long)SqlMapper.Execute(this._connectionFactory.GetConnection, query,
+            lstfound = SqlMapper.Query<PersonaEntity>(this._connectionFactory.GetConnection, query,
                 param, commandType: System.Data.CommandType.StoredProcedure);
+            id = Convert.ToInt32(lstfound.First().cPerCodigo);
             return id;
         }
         public bool Delete(string id)
@@ -103,7 +105,7 @@ namespace EP_SimuladorMicroservice.Infraestructure
             switch(filterType)
             {
                 case PersonaFilterListType.ByList:
-                    lstItemFound = this.getByList();
+                    lstItemFound = this.getByList(pagination.PageIndex,pagination.TotalRows);
                     break;
                 default:
                     break;
@@ -112,12 +114,14 @@ namespace EP_SimuladorMicroservice.Infraestructure
         }
         #endregion
         #region Private Methods Item
-        private IEnumerable<PersonaEntity> getByList()
+        private IEnumerable<PersonaEntity> getByList(Int32 PageNumber,Int32 RowsOfPage)
         {
             IEnumerable<PersonaEntity> lstfound = new List<PersonaEntity>();
             var query = "USP_Persona_Get";
             var param = new DynamicParameters();
             param.Add("@MP_cPerCodigo", null);
+            param.Add("@PageNumber", PageNumber);
+            param.Add("@RowsOfPage", RowsOfPage);
             lstfound = SqlMapper.Query<PersonaEntity>(this._connectionFactory.GetConnection, query, param,
                 commandType: System.Data.CommandType.StoredProcedure);
             return lstfound;
@@ -132,6 +136,11 @@ namespace EP_SimuladorMicroservice.Infraestructure
                 (this._connectionFactory.GetConnection, query, param, 
                 commandType: System.Data.CommandType.StoredProcedure);
             return itemfound;
+        }
+
+        public bool Delete(string id, DateTime dPerFecEfectiva)
+        {
+            throw new NotImplementedException();
         }
         //private IEnumerable PersonaEntity BycPerList()
         //{

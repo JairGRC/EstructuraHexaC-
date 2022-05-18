@@ -34,7 +34,7 @@ namespace EP_SimuladorMicroservice.Service
                             response.Item = new PernameDomain().EditPername(request.Item);
                             break;
                         case Operation.Delete:
-                            response.Item = new PernameDomain().DeletePername(request.Item.cPerCodigo);
+                            response.Item = new PernameDomain().DeletePername(request.Item.cPerCodigo,request.Item.dPerFecEfectiva);
                             break;
                         default:
                             break;

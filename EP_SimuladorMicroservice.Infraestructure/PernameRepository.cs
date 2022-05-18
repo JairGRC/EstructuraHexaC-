@@ -40,23 +40,24 @@ namespace EP_SimuladorMicroservice.Infraestructure
                 param, commandType: System.Data.CommandType.StoredProcedure);
             return id;
         }
-        public bool Delete(long id)
+       
+        public bool Delete(string id)
         {
             throw new NotImplementedException();
         }
-
-        public bool Delete(string id)
-        {
-            bool exito = false;
-            var regAfectados = 0;
-            var query = "USP_Pername_Delete";
-            var param = new DynamicParameters();
-            param.Add("@MP_cPerCodigo", id);
-            regAfectados = (int)SqlMapper.Execute(this._connectionFactory.GetConnection,
-                query, param, commandType: System.Data.CommandType.StoredProcedure);
-            exito = regAfectados > 0;
-            return exito;
-        }
+        //public bool Delete(string id, DateTime dPerFecEfectiva)
+        //{
+        //    bool exito = false;
+        //    var regAfectados = 0;
+        //    var query = "USP_Pername_Delete";
+        //    var param = new DynamicParameters();
+        //    param.Add("@MP_cPerCodigo", id);
+        //    param.Add("@MP_dPerFecEfectiva", dPerFecEfectiva);
+        //    regAfectados = (int)SqlMapper.Execute(this._connectionFactory.GetConnection,
+        //        query, param, commandType: System.Data.CommandType.StoredProcedure);
+        //    exito = regAfectados > 0;
+        //    return exito;
+        //}
         public bool Update(PernameEntity item)
         {
             var query = "USP_Pername_Update";
@@ -72,24 +73,20 @@ namespace EP_SimuladorMicroservice.Infraestructure
             return (int)SqlMapper.Execute(this._connectionFactory.GetConnection,
                 query, param, commandType: System.Data.CommandType.StoredProcedure) > 0;
         }
-        public PernameEntity GetItem(PernameFilter filter, PernameFilterItemType filterType)
+        public bool delete(string cPerCodigo, DateTime dPerFecEfectiva)
         {
-            PernameEntity itemfound = null;
-            switch (filterType)
-            {
-                case PernameFilterItemType.Undefined:
-                    break;
-                case PernameFilterItemType.BycPerCodigo:
-                    itemfound = this.BycPerCodigo(filter.nConstCodigo);
-                    break;
-                //case PernameFilterItemType.ByList:
-                //    //itemfound = this.BycPerList();
-                //    break;
-                default:
-                    break;
-            }
-            return itemfound;
+            bool exito = false;
+            var regAfectados = 0;
+            var query = "USP_Pername_Delete";
+            var param = new DynamicParameters();
+            param.Add("@MP_cPerCodigo", cPerCodigo);
+            param.Add("@MP_dPerFecEfectiva", dPerFecEfectiva);
+            regAfectados = (int)SqlMapper.Execute(this._connectionFactory.GetConnection,
+                query, param, commandType: System.Data.CommandType.StoredProcedure);
+            exito = regAfectados > 0;
+            return exito;
         }
+
 
         public IEnumerable<PernameEntity> GetLstItem(PernameFilter filter, PernameFilterListType filterType, Pagination pagination)
         {
@@ -120,17 +117,17 @@ namespace EP_SimuladorMicroservice.Infraestructure
                 commandType: System.Data.CommandType.StoredProcedure);
             return lstfound;
         }
-        private PernameEntity BycPerCodigo(string nConstCodigo)
-        {
-            PernameEntity itemfound = null;
-            var query = "USP_Pername_Get";
-            var param = new DynamicParameters();
-            param.Add("@MP_cPerCodigo", nConstCodigo);
-            itemfound = SqlMapper.QueryFirstOrDefault<PernameEntity>
-                (this._connectionFactory.GetConnection, query, param,
-                commandType: System.Data.CommandType.StoredProcedure);
-            return itemfound;
-        }
+        //private PernameEntity BycPerCodigo(string nConstCodigo)
+        //{
+        //    PernameEntity itemfound = null;
+        //    var query = "USP_Pername_Get";
+        //    var param = new DynamicParameters();
+        //    param.Add("@MP_cPerCodigo", nConstCodigo);
+        //    itemfound = SqlMapper.QueryFirstOrDefault<PernameEntity>
+        //        (this._connectionFactory.GetConnection, query, param,
+        //        commandType: System.Data.CommandType.StoredProcedure);
+        //    return itemfound;
+        //}
         private IEnumerable<PernameEntity> ByListID(string nConstCodigo)
         {
             IEnumerable<PernameEntity> lstfound = new List<PernameEntity>();
@@ -141,6 +138,12 @@ namespace EP_SimuladorMicroservice.Infraestructure
                 commandType: System.Data.CommandType.StoredProcedure);
             return lstfound;
         }
+
+        public PernameEntity GetItem(PernameFilter filter, PernameFilterItemType filterType)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 }

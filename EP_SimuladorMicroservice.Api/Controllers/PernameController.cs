@@ -48,21 +48,21 @@ namespace EP_SimuladorMicroservice.Api.Controllers
         [ProducesResponseType(404)]
         public IActionResult GetBycPerCodigo(string cPercodigo)
         {
-            PernameItemResponse response = null;
-            PernameItemRequest request = new PernameItemRequest()
+            PernameLstItemResponse response = null;
+            PernameLstItemRequest request = new PernameLstItemRequest()
             {
                 Filter = new PernameFilter()
                 {
                     nConstCodigo = cPercodigo
                 },
-                FilterType = PernameFilterItemType.BycPerCodigo
+                FilterType = (PernameFilterItemType)PernameFilterListType.ByListID
             };
             try
             {
-                response = new PernameService().GetPername(request);
+                response = new PernameService().GetLstPername(request);
                 if (!response.IsSuccess)
                     return BadRequest(response);
-                if (response.Item == null)
+                if (response.LstItem == null)
                     return NotFound(response);
             }
             catch (Exception)
@@ -113,13 +113,16 @@ namespace EP_SimuladorMicroservice.Api.Controllers
             }
             return Ok(response);
         }
-        [HttpDelete("Delete/{cPerCodigo}")]
-        public IActionResult Delete(string cPerCodigo)
+        [HttpDelete("Delete/{cPerCodigo}/{dPerFecEfectiva}")]
+        public IActionResult Delete(string cPerCodigo,DateTime dPerFecEfectiva)
         {
             PernameResponse response = null;
             PernameRequest request = new PernameRequest()
             {
-                Item = new PernameEntity() { cPerCodigo = cPerCodigo },
+                Item = new PernameEntity() { 
+                    cPerCodigo = cPerCodigo ,
+                    dPerFecEfectiva= dPerFecEfectiva
+                },
                 Operation = Operation.Delete
             };
             try

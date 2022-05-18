@@ -13,7 +13,8 @@ namespace EP_SimuladorMicroservice.Entities.Model
         public string cPerCodigo { get; set; }
         public  List<PernameEntity> Pername { get; set; }
         public  List<PertelefonoEntity> Pertelefono { get; set; }
-
+        public PernaturalEntity Pernatural { get; set; }
+        public List<PerMailEntity> Permail { get; set; }
         [DataMember(EmitDefaultValue = false, Name = "cPerApellido")]
         public string cPerApellido { get; set; }
         [DataMember(EmitDefaultValue = false, Name = "EmitDefaultValue")]
