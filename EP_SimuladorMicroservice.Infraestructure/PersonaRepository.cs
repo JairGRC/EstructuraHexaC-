@@ -132,6 +132,8 @@ namespace EP_SimuladorMicroservice.Infraestructure
             var query = "USP_Persona_Get";
             var param = new DynamicParameters();
             param.Add("@MP_cPerCodigo", nConstCodigo);
+            param.Add("@PageNumber", null);
+            param.Add("@RowsOfPage", null);
             itemfound = SqlMapper.QueryFirstOrDefault<PersonaEntity>
                 (this._connectionFactory.GetConnection, query, param, 
                 commandType: System.Data.CommandType.StoredProcedure);

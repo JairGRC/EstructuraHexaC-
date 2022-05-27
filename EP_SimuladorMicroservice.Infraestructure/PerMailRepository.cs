@@ -100,7 +100,7 @@ namespace EP_SimuladorMicroservice.Infraestructure
             IEnumerable<PerMailEntity> lstfound = new List<PerMailEntity>();
             var query = "SP_PerMailGet";
             var param = new DynamicParameters();
-            param.Add("@cPerCodigo", cPerCodigo);
+            param.Add("@cPercodigo", cPerCodigo);
             lstfound = SqlMapper.Query<PerMailEntity>(this._connectionFactory.GetConnection, query, param,
                 commandType: System.Data.CommandType.StoredProcedure);
             return lstfound;
